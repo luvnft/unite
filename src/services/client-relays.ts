@@ -11,6 +11,7 @@ export type RelayDirectory = Record<string, { read: boolean; write: boolean }>;
 
 export const recommendedReadRelays = new RelaySet(
   safeRelayUrls([
+    "wss://unite.atl5d.com",
     "wss://relay.damus.io/",
     "wss://nostr.wine/",
     "wss://relay.snort.social/",
@@ -20,7 +21,7 @@ export const recommendedReadRelays = new RelaySet(
   ]),
 );
 export const recommendedWriteRelays = new RelaySet(
-  safeRelayUrls(["wss://relay.damus.io/", "wss://nos.lol/", "wss://purplerelay.com/"]),
+  safeRelayUrls(["wss://unite.atl5d.com", "wss://relay.damus.io/", "wss://nos.lol/", "wss://purplerelay.com/"]),
 );
 
 class ClientRelayService {

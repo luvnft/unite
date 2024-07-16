@@ -46,6 +46,7 @@ export default function LoginStartView() {
 
           if (relays.length === 0) {
             relays = safeRelayUrls([
+              "wss://unite.atl5d.com",
               "wss://relay.damus.io/",
               "wss://relay.snort.social/",
               "wss://nostr.wine/",
@@ -75,7 +76,7 @@ export default function LoginStartView() {
         if (!accountService.hasAccount(pubkey)) {
           let relays: string[] = [];
           if (relays.length === 0) {
-            relays = ["wss://relay.damus.io", "wss://relay.snort.social", "wss://nostr.wine", COMMON_CONTACT_RELAY];
+            relays = ["wss://unite.atl5d.com", "wss://relay.damus.io", "wss://relay.snort.social", "wss://nostr.wine", COMMON_CONTACT_RELAY];
           }
 
           accountService.addAccount({ pubkey, relays, type: "serial", readonly: false });

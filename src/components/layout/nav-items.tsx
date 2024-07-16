@@ -213,7 +213,7 @@ export default function NavItems() {
         <Button
           as={Link}
           leftIcon={<LightningIcon boxSize={6} color="yellow.400" />}
-          href="https://geyser.fund/project/nostrudel"
+          href="https://geyser.fund/project/rnt"
           isExternal
           onClick={(e) => {
             e.preventDefault();
@@ -227,7 +227,7 @@ export default function NavItems() {
       {donateModal.isOpen && (
         <ZapModal
           isOpen
-          pubkey="713978c3094081b34fcf2f5491733b0c22728cd3b7a6946519d40f5f08598af8"
+          pubkey="83ec591d93ace7270302cd347e90c78da2a9746d026feb8edec477f082ce449e"
           onClose={donateModal.onClose}
           onZapped={() => setLastDonate(dayjs().unix())}
         />
